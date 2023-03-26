@@ -24,18 +24,19 @@ $(function () {
 
 
 $(function() {
-//Added a listener for click events on the save button.
+  // Add a listener for click events on the save button.
   $(".saveBtn").on("click", function() {
+    // Get the id of the containing time-block.
     var key = $(this).closest(".time-block").attr("id");
+    // Get the user input from the corresponding textarea.
     var value = $(this).siblings(".description").val();
+    // Save the key-value pair in local storage.
     localStorage.setItem(key, value);
   });
+
+  
+
+  // Display the current date in the header.
+  var currentDate = dayjs().format('MMMM D, YYYY');
+  $("#currentDay").text(currentDate);
 });
-
- 
-
-
-
-//Added current date to the header.
-var currentDate = dayjs().format('MMMM D, YYYY');
-      document.getElementById('currentDay').textContent = currentDate;
