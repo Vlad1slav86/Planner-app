@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -147,34 +147,8 @@
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
     crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="./Assets/js/script.js"></script>
   </body>
 </html>
 
 
-<!--$(function() {
-
-  $(".saveBtn").on("click", function() {
-    var key = $(this).closest(".time-block").attr("id");
-    var value = $(this).siblings(".description").val();
-    localStorage.setItem(key, value);
-  });
-
-  
-  var currentHour = dayjs().hour();
-$(".time-block").each(function() {
-  var hour = parseInt($(this).attr("id").split("-")[1]);
-  if (hour < currentHour) {
-    $(this).addClass("past").removeClass("present future");
-  } else if (hour === currentHour) {
-    $(this).addClass("present").removeClass("past future");
-  } else {
-    $(this).addClass("future").removeClass("past present");
-  }
-});
-
-
-});
-
-var currentDate = dayjs().format('MMMM D, YYYY');
-      document.getElementById('currentDay').textContent = currentDate;-->

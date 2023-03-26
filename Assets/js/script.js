@@ -23,3 +23,12 @@ $(function () {
 });
 
 
+$(function() {
+//Added a listener for click events on the save button.
+  $(".saveBtn").on("click", function() {
+    var key = $(this).closest(".time-block").attr("id");
+    var value = $(this).siblings(".description").val();
+    localStorage.setItem(key, value);
+  });
+
+  
