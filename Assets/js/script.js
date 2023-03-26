@@ -30,5 +30,12 @@ $(function() {
     var value = $(this).siblings(".description").val();
     localStorage.setItem(key, value);
   });
+});
 
-  
+ 
+
+
+
+//Added current date to the header.
+var currentDate = dayjs().format('MMMM D, YYYY');
+      document.getElementById('currentDay').textContent = currentDate;
