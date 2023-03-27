@@ -17,4 +17,4 @@ Enter an event in any field. The data will be saved to the Local Storage of the 
 
 GitHub Repo: https://github.com/Vlad1slav86/Planner-app
 
-App page:
+App page: https://vlad1slav86.github.io/Planner-app/
