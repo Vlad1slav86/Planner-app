@@ -34,7 +34,20 @@ $(function() {
     localStorage.setItem(key, value);
   });
 
-  
+  // Apply the past, present, or future class to each time block.
+  var currentHour = dayjs().hour();
+  $(".time-block").each(function() {
+    var hour = parseInt($(this).attr("id").split("-")[1]);
+    if (hour < currentHour) {
+      $(this).addClass("past").removeClass("present future");
+    } else if (hour === currentHour) {
+      $(this).addClass("present").removeClass("past future");
+    } else {
+      $(this).addClass("future").removeClass("past present");
+    }
+  });
+
+ 
 
   // Display the current date in the header.
   var currentDate = dayjs().format('MMMM D, YYYY');
