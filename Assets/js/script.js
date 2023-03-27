@@ -47,7 +47,14 @@ $(function() {
     }
   });
 
- 
+  // Get any user input that was saved in localStorage and set the textarea values.
+  $(".time-block").each(function() {
+    var key = $(this).attr("id");
+    var value = localStorage.getItem(key);
+    if (value !== null) {
+      $(this).find(".description").val(value);
+    }
+  });
 
   // Display the current date in the header.
   var currentDate = dayjs().format('MMMM D, YYYY');
