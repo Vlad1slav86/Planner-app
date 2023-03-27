@@ -8,7 +8,13 @@ Enter an event in any field. The data will be saved to the Local Storage of the 
 
 ## Screenshots
 
+![initial page](./Assets/images/Screenshot%202023-03-27%20at%201.37.49%20PM.png)
 
+![saved events in localStorage](./Assets/images/Screenshot%202023-03-27%20at%201.40.01%20PM.png)
 
 
 ## Links
+
+GitHub Repo: https://github.com/Vlad1slav86/Planner-app
+
+App page:
